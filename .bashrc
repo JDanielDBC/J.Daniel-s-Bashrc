@@ -59,8 +59,14 @@ alias ll='ls -l'
 alias la='ls -A'
 alias l='ls -CF'
 
-#some aliases by Blackout installer
+#my alias
+alias r=/run/media/daniel/SD/scripts/r.sh
+alias u='sudo dnf update -y && flatpak update -y'
+alias o=/run/media/daniel/SD/scripts/ondemand.sh
+alias p=/run/media/daniel/SD/scripts/powersave.sh
+alias a12=/run/media/daniel/SD/scripts/android12.sh
 alias g=gnome-text-editor
+alias rt=/run/media/daniel/SD/scripts/rotate.sh
 alias myip="curl http://ipecho.net/plain; echo"
 alias recomp='make clean && make'
 alias keys='echo "*Shell key bindings and shortcuts*
@@ -85,28 +91,7 @@ Ctrl + D --> Exit shell
     !*   --> Argument of last command
  !-x*    --> Argument of commands ago" '
 alias governor='cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor'
-alias teclas='echo "*Atajos del Shell*
-
-Ctrl + L --> Borrar todo en pantalla
-Ctrl + A --> Principio de línea
-Ctrl + E --> Final de línea
-Alt + B  --> Atrás por palabra
-Alt + F  --> Adelante por palabra
-Ctrl + U --> Borrar todo antes del cursor
-Ctrl + K --> Borrar todo después del cursor
-Ctrl + W --> Borrar palabra antes de cursor
-Alt + D  --> Borrar palabra después de cursor
-Ctrl + Y --> Deshacer
-Alt + .  --> Último argumento
-Ctrl + P --> Comando anterior
-Ctrl + N --> Siguiente comando
-Ctrl + D --> Salir de la Shell
- !!      --> Último comando
-!!:s/old/new/ --> Sustitución de algo en el último comando
-!-(1,2,3...)  --> Hace x comandos
-    !*   --> Argumento del útimo comando
- !-x*    --> Argumento de hace x comandos" '
-
+alias tablet='sudo systemctl stop iio-sensor-proxy'
 
 #Archive extraction
 #From DT (Distro Tube)
