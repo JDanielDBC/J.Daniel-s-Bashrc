@@ -1,7 +1,16 @@
+#Blackout Linux (Fedora Edition) by JDanielDBC
 #Jesús Daniel Díaz Barriga Cruz
 # ~/.bashrc
 #
-pfetch
+#pfetch
+ascii-image-converter ~/Pictures/'Blackout Linux logo nano nano.png' -C
+printf "\n              ~Blackout Linux~\n"
+echo $USER @ $(hostname)
+cat /sys/devices/virtual/dmi/id/product_version
+echo Kernel: $(uname -r)
+echo $(uptime -p)
+
+
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -92,7 +101,29 @@ Ctrl + D --> Exit shell
  !-x*    --> Argument of commands ago" '
 alias governor='cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor'
 alias tablet='sudo systemctl stop iio-sensor-proxy'
+alias teclas='echo "*Atajos del Shell*
 
+Ctrl + L --> Borrar todo en pantalla
+Ctrl + A --> Principio de línea
+Ctrl + E --> Final de línea
+Alt + B  --> Atrás por palabra
+Alt + F  --> Adelante por palabra
+Ctrl + U --> Borrar todo antes del cursor
+Ctrl + K --> Borrar todo después del cursor
+Ctrl + W --> Borrar palabra antes de cursor
+Alt + D  --> Borrar palabra después de cursor
+Ctrl + Y --> Deshacer
+Alt + .  --> Último argumento
+Ctrl + P --> Comando anterior
+Ctrl + N --> Siguiente comando
+Ctrl + D --> Salir de la Shell
+ !!      --> Último comando
+!!:s/old/new/ --> Sustitución de algo en el último comando
+!-(1,2,3...)  --> Hace x comandos
+    !*   --> Argumento del útimo comando
+ !-x*    --> Argumento de hace x comandos" '
+ 
+ 
 #Archive extraction
 #From DT (Distro Tube)
 #ex <file>
